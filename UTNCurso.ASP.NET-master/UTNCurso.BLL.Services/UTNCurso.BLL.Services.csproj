@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="6.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UTNCurso.BLL.DTOs\UTNCurso.BLL.DTOs.csproj" />
+    <ProjectReference Include="..\UTNCurso.Common.Entities\UTNCurso.Common.Entities.csproj" />
+    <ProjectReference Include="..\UTNCurso.Core\UTNCurso.Core.csproj" />
+    <ProjectReference Include="..\UTNCurso.DAL.EFCore\UTNCurso.DAL.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

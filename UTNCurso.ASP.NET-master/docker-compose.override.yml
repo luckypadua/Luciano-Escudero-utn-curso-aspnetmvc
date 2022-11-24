@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  utncurso:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "443"
+      - "80"
+  utncursoapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"
