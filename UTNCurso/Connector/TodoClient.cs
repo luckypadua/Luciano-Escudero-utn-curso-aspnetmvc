@@ -30,6 +30,7 @@ namespace UTNCurso.Connector
             {
                 var response = await client.PostAsJsonAsync("http://localhost:5200/todos", todoItem);
                 var x = await response.Content.ReadAsStringAsync();
+                //excepción no controlada la clase Result no soporta la deserealizacion de x
                 var result = JsonConvert.DeserializeObject<Result>(x);
 
                 return result;
